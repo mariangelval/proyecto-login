@@ -1,0 +1,102 @@
+/*Importar fuentes utilizadas en la aplicación de estilos*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap');
+header{
+    background-color: #4a88f4;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding-top: 17px;
+    top: -1px;
+    height: 55px;
+    left: 0;
+    width: 100%;
+}
+/*Setear el body y poner propiedades por defecto a todos los elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%; 
+}
+/*Estilo del título de la página "Cursos PIA"*/
+.titulo h1{
+    font-family: Montserrat;
+    text-align: left;
+    padding-top: 50px;
+    margin-left: 9.8%;
+    margin-top: 5%;
+    font-size: 42px;
+}
+
+/*ESTILOS PARA LAS TARJETAS DE CURSOS*/
+.catalogo{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    flex-wrap: wrap;
+}
+
+.curso{
+    background-color: #DFDFDF;
+    width: 344px;
+    height: 390px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.curso img {
+    width: 100%;
+    height: 194px;
+    margin-bottom: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.curso h2{
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+}
+.curso .descripcion{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.curso .boton{
+    background-color:#e8c441;
+	border-radius: 40px;
+	border:1px solid #e8c441;
+	display:inline-block;
+	cursor:pointer;
+	font-size:17px;
+	padding:10px 20px;
+    margin-top: 10px;
+    margin-left: 29%;
+}
+.boton a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+}
+.curso .boton:hover{
+    transform: scale(1.05);
+}
+.tuscursos{
+    margin-left: 80%;
+    font-family: Montserrat;
+    font-size: 20px;
+    color: #4F33FB;
+}
+@media (max-width: 768px) {
+    .tuscursos {
+        margin-left: 65%; 
+        text-align: center; /* Centra el texto en el centro del espacio disponible */
+        margin-top: 30px; /* Añade un margen superior para separar del contenido anterior */
+    }
+}
+/* @media (max-width: 600px) {
+    .catalogo {
+        flex-direction: column;
+    }
+} */

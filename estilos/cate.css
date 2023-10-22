@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap');
+header{
+    background-color: #4a88f4;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding-top: 17px;
+    top: -1px;
+    height: 55px;
+    left: 0;
+    width: 100%;
+}
+/*Setear el body y poner propiedades por defecto a todos los elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%; 
+}
+/*Estilo del título de la página "CATE"*/
+.titulo h1{
+    font-family: Montserrat;
+    text-align: left;
+    padding-top: 50px;
+    margin-left: 9.8%;
+    margin-top: 5%;
+    font-size: 42px;
+}
+/*ESTILOS PARA LA TABLA*/
+table{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; 
+    border: 5px solid white;
+    background-color: #B6C5F1;
+}
+/*Estilos para filas y columnas*/
+td,th{
+    border: 1px solid;
+    border-color: black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*Estilo para la cabecera de cada fila*/
+.cabecera{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

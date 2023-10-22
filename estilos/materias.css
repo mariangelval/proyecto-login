@@ -1,0 +1,147 @@
+/*Importar fuentes utilizadas en la aplicación de estilos*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap');
+/*Código del header*/
+header{
+    background-color: #4a88f4;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding-top: 17px;
+    top: -1px;
+    height: 55px;
+    left: 0;
+    width: 100%;
+}
+/*Setear el body y poner propiedades por defecto a todos los elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%; 
+}
+/*Estilo del título de la página "Estado de tus materias"*/
+.titulo h1{
+    font-family: Montserrat;
+    text-align: left;
+    padding-top: 50px;
+    margin-left: 9.8%;
+    margin-top: 5%;
+    font-size: 42px;
+}
+/*ESTILOS PARA LA TABLA*/
+table{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; 
+    border: 5px solid white;
+    background-color: #B6C5F1;
+}
+/*Estilos para filas y columnas*/
+td,th{
+    border: 1px solid;
+    border-color: black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*Estilo para la cabecera de cada fila*/
+.cabecera{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilo del contenido de "Estado" en caso de que esté la materia aprobada: */
+.status .statuscontainer_aprobado {
+    border-radius: 40px;
+    width: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(75, 170, 70);
+    color: white;
+    font-size: 17px;
+  }
+  
+  /* Estilo del contenido de "Estado" en caso de que esté la materia desaprobada: */
+  .status .statuscontainer_desaprobado {
+    border-radius: 40px;
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(188, 21, 21);
+    color: white;
+    font-size: 17px;
+  }
+  /*Acá se centra el item dentro de la grilla de "Estado"*/
+  .status-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Media Query para ajustar los estilos cuando la pantalla sea más pequeña, hacerlo responsive */
+  @media (max-width: 600px) {
+    .status .statuscontainer_aprobado,
+    .status .statuscontainer_desaprobado {
+      width: 90%; /* Cambia el ancho en pantallas pequeñas */
+      font-size: 12px; /* Ajusta el tamaño de fuente si es necesario */
+    }
+  }
+
+ /*ESTILOS PARA EL SELECTOR DE AÑO*/
+  select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: rgb(198, 197, 197);
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#000;
+    cursor:pointer;
+    font-size: 100%;
+    font-family: 'Montserrat';
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .selector {
+    position: relative;
+    display: flex;
+    width: 8em;
+    height: 2em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    margin-left: 80%;
+
+ }
+ .selector::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 0 1em;
+    background: rgb(198, 197, 197);
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
